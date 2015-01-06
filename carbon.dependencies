@@ -13,9 +13,9 @@
   },
   {
     "remote": "carbon",
-    "repository": "CarbonROM/android_device_sony_shinano-common",
+    "repository": "CyanogenMod/android_device_sony_shinano-common",
     "target_path": "device/sony/shinano-common",
-    "revision": "lollipop"
+    "revision": "cm-12.0"
   },
   {
     "remote": "cm",
@@ -31,8 +31,8 @@
   },
   {
     "remote": "cm",
-    "repository": "CarbonROM/android_device_sony_msm8974-common",
-    "target_path": "device/motorola/msm8226-common",
+    "repository": "CyanogenMod/android_device_sony_msm8974-common",
+    "target_path": "device/sony/msm8974-common",
     "revision": "cm-12.0"
   },
   {
