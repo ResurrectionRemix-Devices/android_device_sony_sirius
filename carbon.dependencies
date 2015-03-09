@@ -1,18 +1,18 @@
 [
   {
-    "remote":       "github",
+    "remote":       "gh",
     "repository":   "Myself5/device-sony-shinano",
     "target_path":  "device/sony/shinano",
-    "revision":     "android-5.1-3.10"
+    "revision":     "lp"
   },
   {
-    "remote":       "github",
+    "remote":       "gh",
     "repository":   "sonyxperiadev/kernel",
     "target_path":  "kernel/sony/msm",
     "revision":     "aosp/AU_LINUX_ANDROID_LA.BF.2.1_RB1.05.00.00.173.012"
   },
   {
-    "remote":       "github",
+    "remote":       "gh",
     "repository":   "sonyxperiadev/thermanager",
     "target_path":  "vendor/sony/system/thermanager",
     "revision":     "master"

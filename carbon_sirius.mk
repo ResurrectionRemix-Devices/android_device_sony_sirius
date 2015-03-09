@@ -16,10 +16,10 @@ TARGET_KERNEL_CONFIG := aosp_shinano_sirius_defconfig
 TARGET_KERNEL_SOURCE := kernel/sony/msm
 
 # Inherit Omni GSM telephony parts
-$(call inherit-product, vendor/omni/config/gsm.mk)
+$(call inherit-product, vendor/carbon/config/gsm.mk)
 
 # Inherit Omni product configuration
-$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/carbon/config/common.mk)
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony.mk)
@@ -73,7 +73,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/sony/sirius/recovery/root/etc/bootrec-device:recovery/root/etc/bootrec-device
 
-PRODUCT_NAME := omni_sirius
+PRODUCT_NAME := carbon_sirius
 PRODUCT_DEVICE := sirius
 PRODUCT_BRAND := Sony
 PRODUCT_MODEL := Xperia Z2
