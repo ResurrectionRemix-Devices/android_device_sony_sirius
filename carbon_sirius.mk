@@ -78,10 +78,13 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_NAME := carbon_sirius
 PRODUCT_DEVICE := sirius
-PRODUCT_BRAND := Sony
 PRODUCT_MODEL := Xperia Z2
-PRODUCT_LOCALES += xxhdpi xhdpi hdpi
+PRODUCT_BRAND := Sony
 PRODUCT_MANUFACTURER := Sony
+
+PRODUCT_AAPT_CONFIG := large
+PRODUCT_AAPT_PREBUILT_DPI := xxhdpi xhdpi hdpi
+PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=480
