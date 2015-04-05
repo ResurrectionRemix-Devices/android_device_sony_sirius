@@ -1,20 +1,26 @@
 [
   {
-    "remote":       "gh",
-    "repository":   "Myself5/device-sony-shinano",
-    "target_path":  "device/sony/shinano",
-    "revision":     "lp"
+    "remote":       "omni",
+    "repository":   "android_device_sony_shinano-common",
+    "target_path":  "device/sony/shinano-common",
+    "revision":     "android-5.1"
   },
   {
-    "remote":       "gh",
-    "repository":   "sonyxperiadev/kernel",
+    "remote":       "omni",
+    "repository":   "android_kernel_sony_msm",
     "target_path":  "kernel/sony/msm",
-    "revision":     "aosp/AU_LINUX_ANDROID_LA.BF.2.1_RB1.05.00.00.173.012"
+    "revision":     "android-5.1"
   },
   {
-    "remote":       "gh",
-    "repository":   "sonyxperiadev/thermanager",
-    "target_path":  "vendor/sony/system/thermanager",
-    "revision":     "master"
+    "remote":       "omni",
+    "repository":   "android_hardware_sony_thermanager",
+    "target_path":  "hardware/sony/thermanager",
+    "revision":     "android-5.1"
+  },
+  {
+    "remote":       "omni",
+    "repository":   "android_hardware_sony_timekeep",
+    "target_path":  "hardware/sony/timekeep",
+    "revision":     "android-5.1"
   }
 ]
