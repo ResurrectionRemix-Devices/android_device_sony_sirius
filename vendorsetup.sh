@@ -1,1 +1,2 @@
-add_lunch_combo cm_sirius-eng
+add_lunch_combo carbon_sirius-eng
+add_lunch_combo carbon_sirius-userdebug
