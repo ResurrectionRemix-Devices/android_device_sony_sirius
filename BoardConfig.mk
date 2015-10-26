@@ -25,8 +25,6 @@ TARGET_SPECIFIC_HEADER_PATH += device/sony/sirius/include
 
 BOARD_HARDWARE_CLASS += device/sony/sirius/cmhw
 
-USE_SM_OPTS := true
-
 # Kernel properties
 TARGET_KERNEL_CONFIG := cm_shinano_sirius_defconfig
 
