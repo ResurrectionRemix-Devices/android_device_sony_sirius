@@ -19,7 +19,7 @@ PRODUCT_COPY_FILES := \
     device/sony/sirius/rootdir/system/etc/audio_policy.conf:system/etc/audio_policy.conf \
     device/sony/sirius/rootdir/system/etc/BCM4339.hcd:system/etc/firmware/BCM43xx.hcd \
     device/sony/sirius/rootdir/system/etc/wifi/bcmdhd.cal:system/etc/wifi/bcmdhd.cal \
-    device/sony/sirius/rootdir/system/etc/sensor_def_qcomdev.conf:system/etc/sensor_def_qcomdev.conf \
+    device/sony/sirius/rootdir/system/etc/sensors/sensor_def_qcomdev.conf:system/etc/sensors/sensor_def_qcomdev.conf \
     device/sony/sirius/rootdir/system/etc/thermanager.xml:system/etc/thermanager.xml \
     device/sony/sirius/rootdir/system/etc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
     device/sony/sirius/rootdir/system/etc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
@@ -56,6 +56,13 @@ PRODUCT_COPY_FILES += \
     device/sony/sirius/rootdir/system/etc/tfa98xx/VoiceCallEarpice_top.preset:/system/etc/tfa98xx/VoiceCallEarpice_top.preset \
     device/sony/sirius/rootdir/system/etc/tfa98xx/VoiceCallEarpice_top.eq:/system/etc/tfa98xx/VoiceCallEarpice_top.eq
 
+# Device Specific Permissions
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
+    frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml \
+    frameworks/native/data/etc/android.hardware.sensor.barometer.xml:system/etc/permissions/android.hardware.sensor.barometer.xml \
+    frameworks/native/data/etc/android.hardware.sensor.gyroscope.xml:system/etc/permissions/android.hardware.sensor.gyroscope.xml
+
 # Device Init
 PRODUCT_PACKAGES += \
     init.recovery.sirius \
@@ -74,6 +81,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     nfc_nci.sirius
 
+# Telephony Packages (AOSP)
+PRODUCT_PACKAGES += \
+    InCallUI \
+    Stk
+
 PRODUCT_AAPT_CONFIG := large
 PRODUCT_AAPT_PREBUILT_DPI := xxhdpi xhdpi hdpi
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
@@ -84,4 +96,4 @@ PRODUCT_PROPERTY_OVERRIDES := \
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/sony/shinano-common/platform.mk)
-$(call inherit-product, vendor/sony/sirius/sirius-vendor.mk)
+$(call inherit-product, vendor/sony/shinano-sirius/sirius-vendor.mk)
